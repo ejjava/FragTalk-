@@ -1,0 +1,28 @@
+[
+    {
+        "author": "官方",
+        "date": "2025-05-05",
+        "content": "测试 图片 音频 文字",
+        "image": "https://img0.baidu.com/it/u=3443631673,450006572&fm=253&fmt=auto&app=138&f=JPEG?w=1422&h=800",
+        "audio": "http://music.163.com/song/media/outer/url?id=2685923630.mp3"
+    },
+    {
+        "author": "逍遥·成都",
+        "date": "2025-05-04",
+        "content": "分享一下我喜欢的歌<br>可不可以",
+        "audio": "http://music.163.com/song/media/outer/url?id=2133591453.mp3"
+    },
+    {
+        "author": "旅行者·安徽",
+        "date": "2025-04-28",
+        "content": "黄山",
+        "image": "http://img0.baidu.com/it/u=1155574319,4148788548&fm=253&app=120&f=JPEG?w=1387&h=800"
+    },
+   
+    {
+        "author": "匿名",
+        "date": "2025-03-18",
+        "content": "忘了吧..."
+      
+    }
+]

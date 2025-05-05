@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>FragTalk | 碎语 - 碎片留言 </title>
-<meta name="description" content="FragTalk 是一个碎片话语的留言网站，为您带来片刻的思考与共鸣。">
-<meta name="keywords" content="留言,碎片话语,随机,灵感,思想片段,语录">
- <link rel="stylesheet" href="home.css">
- <link rel="shortcut icon" href="favicon.ico"> 
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>FragTalk | 碎语 - 碎片留言</title>
+    <meta name="description" content="FragTalk 是一个碎片话语的留言网站，为您带来片刻的思考与共鸣。">
+    <meta name="keywords" content="留言,碎片话语,随机,灵感,思想片段,语录">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
     <div class="ink-background"></div>
@@ -18,9 +18,9 @@
         
         <main class="message-container">
             <div class="message-card" id="message-card">
-                <div class="message-header">
-                    <span class="author" id="author">加载中...</span>
-                    <span class="date" id="date">--</span>
+                <div class="message-header" id="message-header">
+                    <span class="author" id="author"></span>
+                    <span class="date" id="date"></span>
                 </div>
                 <div class="message-content" id="content">
                     <div class="loading-dots">
@@ -29,9 +29,22 @@
                         <div class="dot"></div>
                     </div>
                 </div>
+                <!-- 图片展示区域 -->
+                <div class="image-container" id="image-container">
+                    <img id="message-image" src="" alt="留言配图">
+                </div>
+                <!-- 音频播放器 -->
+                <div class="audio-player" id="audio-player">
+                    <audio id="audio-element" controls></audio>
+                    <div class="audio-info">
+                        <span id="audio-duration">--:--</span>
+                        <span id="audio-time">00:00</span>
+                    </div>
+                </div>
             </div>
         </main>
         
+        <!-- 居中随机按钮 -->
         <div class="controls">
             <button id="random-btn" class="control-btn">
                 <svg viewBox="0 0 24 24">
@@ -55,13 +68,14 @@
             <div class="modal-content">
                 <p>FragTalk 是一个碎片话语的留言网站，每一句话都像一片飘落的树叶，承载着不同的思绪和情感。</p>
                 <p>这里没有长篇大论，只有那些转瞬即逝的灵感、突如其来的感悟和偶然拾得的话语碎片。</p>
-                <p>每次的随机，让你遇见未知的文字和思想！</p>
+                <p>每次的随机，让你遇见未知的文字、图片和声音...</p>
                 <p>愿这些碎片能为你带来片刻的思考或共鸣...</p>
                 <a href="./About.html">留言</a>
             </div>
         </div>
     </div>
-
+    
+    <script src="leaves.js"></script>
     <script src="home.js"></script>
 </body>
 </html>
