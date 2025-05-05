@@ -267,6 +267,12 @@ audio::-webkit-media-controls-time-remaining-display {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     -webkit-tap-highlight-color: transparent;
 }
+.control-btn {
+    /* 原有样式保持不变 */
+    margin-bottom: 80px; /* 根据需要调整这个值 */
+}
+
+
 
 .control-btn svg {
     width: 28px;
