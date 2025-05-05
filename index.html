@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>FragTalk | 碎语 - 碎片留言 </title>
+<meta name="description" content="FragTalk 是一个碎片话语的留言网站，为您带来片刻的思考与共鸣。">
+<meta name="keywords" content="留言,碎片话语,随机,灵感,思想片段,语录">
+ <link rel="stylesheet" href="home.css">
+ <link rel="shortcut icon" href="favicon.ico"> 
+</head>
+<body>
+    <div class="ink-background"></div>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Frag<span>·</span>Talk</h1>
+            <div class="divider"></div>
+        </header>
+        
+        <main class="message-container">
+            <div class="message-card" id="message-card">
+                <div class="message-header">
+                    <span class="author" id="author">加载中...</span>
+                    <span class="date" id="date">--</span>
+                </div>
+                <div class="message-content" id="content">
+                    <div class="loading-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <div class="controls">
+            <button id="random-btn" class="control-btn">
+                <svg viewBox="0 0 24 24">
+                    <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- 网站介绍弹窗 -->
+    <div class="modal-overlay" id="intro-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h2>关于 FragTalk</h2>
+                <button class="close-btn" id="close-modal">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-content">
+                <p>FragTalk 是一个碎片话语的留言网站，每一句话都像一片飘落的树叶，承载着不同的思绪和情感。</p>
+                <p>这里没有长篇大论，只有那些转瞬即逝的灵感、突如其来的感悟和偶然拾得的话语碎片。</p>
+                <p>每次的随机，让你遇见未知的文字和思想！</p>
+                <p>愿这些碎片能为你带来片刻的思考或共鸣...</p>
+                <a href="./About.html">留言</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
